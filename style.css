@@ -59,6 +59,7 @@ ul,ol{list-style:none;padding:0}
 .dur{grid-area:dur;font:700 1.75rem/2.5rem var(--display);letter-spacing:-.01em}
 .body{grid-area:body}
 .body h3{padding-top:.3rem;font:600 1.4rem/1.3 var(--display)}
+.body h4{max-width:36rem;margin-top:.5rem;color:var(--slate);font-weight: bold;}
 .body p{max-width:36rem;margin-top:.5rem;color:var(--slate)}
 .entry.end{padding-bottom:0}
 .end .body a{font:600 1.25rem/2.5rem var(--display);border-bottom:2px solid currentColor}
