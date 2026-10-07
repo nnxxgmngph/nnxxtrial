@@ -3,132 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JRP's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>John Romnick | Systems Integration Supervisor</title>
+    <meta name="description" content="Portfolio of John Romnick, Systems Integration Supervisor and Application Analyst.">
+    <meta name="theme-color" content="#EDF0F5">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101828'/%3E%3Ctext x='32' y='42' font-size='28' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EJR%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Public+Sans:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="logo"><span>John Romnick</span></a>
+        <a href="#about" class="logo">John Romnick</a>
 
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
+        <nav class="nav" id="site-nav" aria-label="Main">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="nav-cta-mobile"><a href="#contact">Visit socials</a></li>
+            </ul>
+        </nav>
 
-            <li>
-                <a href="#experience">Experiences</a>
-            </li>
+        <a href="#contact" class="visit">Visit socials</a>
 
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-
-        <i class="fa-duotone fa-solid fa-bars" id="menu-icon"></i>
-
-        <button class="visit-btn">Visit Socials</button>
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="Images\jrp-square.png" alt="">
-
-            <div class="info-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>John Romnick</h1>
+    <main>
+        <section id="about" class="wrap hero">
+            <div class="hero-copy">
+                <h1 class="name"><span>John</span> <span>Romnick</span></h1>
+                <p class="roles">
                     <span>Systems Integration Supervisor</span>
                     <span>Application Analyst</span>
+                </p>
+                <p class="lede">I connect business applications and keep the data moving between them accurate, so teams can rely on the systems they use every day.</p>
+
+                <div class="actions">
+                    <!-- Put your CV at cv/John-Romnick-CV.pdf -->
+                    <a class="btn btn-primary" href="cv/John-Romnick-CV.pdf" download>Download CV</a>
+                    <a class="btn btn-ghost" href="#contact">Contact me</a>
                 </div>
 
-                <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn">Contact</div>
-                </div>
-
-                <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experiences</h2>
-
-        <div class="experience-info">
-            <div class="grid">
-                <div class="grid-card">
-                    <i class="fa-solid fa-database"></i>
-                    <span>Systems Integration Supervisor | Application Analyst</span>
-                    <h3>5 Years</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-etch fa-solid fa-arrow-right-arrow-left"></i>
-                    <span>Service Level Manager</span>
-                    <h3>10 Months</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Software Implementor</span>
-                    <h3>6 months</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-solid fa-circle-nodes"></i>
-                    <span>Fiber Optic Splicer</span>
-                    <h3>6 months</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+                <ul class="socials">
+                    <!-- Replace with your own profile URLs -->
+                    <li><a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
 
-            <img src="Images/John-Romnick-plain.jpg" alt="">
-        </div>
-    </section>
+            <figure class="portrait">
+                <img src="Images/John-Romnick-plain.jpg" width="512" height="768" alt="John Romnick in a black polo shirt with arms crossed">
+            </figure>
+        </section>
 
-    <section class="contact" id="contact">
-        <div class="input-box">
+        <section id="experience" class="wrap section">
+            <h2 class="title">Experience</h2>
+            <p class="intro">From fiber in the field to systems integration.</p>
 
-            <h2 class="section-title">Contact Me</h2>
+            <ol class="timeline">
+                <li class="spine" aria-hidden="true"></li>
 
-            <div class="input">
-                <input type="text" placeholder="example@email.com">
-                <i class="fa-solid fa-envelope"></i>
+                <li class="entry">
+                    <span class="node"><i class="fa-solid fa-database" aria-hidden="true"></i></span>
+                    <span class="dur">5 years</span>
+                    <div class="body">
+                        <h3>Systems Integration Supervisor | Application Analyst</h3>
+                        <p>Lead integrations between business applications and analyze how they are used, so the systems teams depend on stay connected and reliable.</p>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <span class="node"><i class="fa-solid fa-right-left" aria-hidden="true"></i></span>
+                    <span class="dur">10 months</span>
+                    <div class="body">
+                        <h3>Service Level Manager</h3>
+                        <p>Tracked service targets, reported where support fell short, and worked with teams to bring it back on target.</p>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <span class="node"><i class="fa-solid fa-gear" aria-hidden="true"></i></span>
+                    <span class="dur">6 months</span>
+                    <div class="body">
+                        <h3>Software Implementor</h3>
+                        <p>Set up and configured software for clients and helped their teams start using it.</p>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <span class="node"><i class="fa-solid fa-circle-nodes" aria-hidden="true"></i></span>
+                    <span class="dur">6 months</span>
+                    <div class="body">
+                        <h3>Fiber Optic Splicer</h3>
+                        <p>Spliced and tested fiber optic cable in the field, joining strands so networks stay connected.</p>
+                    </div>
+                </li>
+
+                <li class="entry end">
+                    <span class="node"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                    <div class="body"><a href="#contact">Get in touch</a></div>
+                </li>
+            </ol>
+        </section>
+
+                <section id="skills" class="wrap section">
+            <h2 class="title">Skills</h2>
+            <p class="intro">The tools and habits I rely on across integration, analysis and service work.</p>
+            <!-- Sample text: replace with your real skills -->
+            <div class="skill-groups">
+                <div>
+                    <h3>Integration</h3>
+                    <ul><li>REST and SOAP APIs</li><li>Middleware and message queues</li><li>Data mapping and ETL</li><li>SQL and data validation</li></ul>
+                </div>
+                <div>
+                    <h3>Analysis</h3>
+                    <ul><li>Requirements gathering</li><li>Process mapping</li><li>User acceptance testing</li><li>Technical documentation</li></ul>
+                </div>
+                <div>
+                    <h3>Service management</h3>
+                    <ul><li>SLA tracking and reporting</li><li>Incident and change management</li><li>ITIL practices</li><li>Vendor coordination</li></ul>
+                </div>
+                <div>
+                    <h3>Network and field</h3>
+                    <ul><li>Fiber optic splicing</li><li>OTDR testing</li><li>Cable and link troubleshooting</li><li>Safety procedures</li></ul>
+                </div>
             </div>
 
-            <div class="btn">Submit</div>
-        </div>
-    </section>
+            <div class="edu">
+                <h3>Education and certifications</h3>
+                <ul>
+                    <li><strong>Bachelor's degree, Information Technology</strong> Your university, graduation year</li>
+                    <li><strong>ITIL 4 Foundation</strong> Issuing body, year</li>
+                    <li><strong>Fiber optic splicing training</strong> Training provider, year</li>
+                </ul>
+            </div>
+        </section>
 
-    <footer>
+        <section id="projects" class="wrap section">
+            <h2 class="title">Selected projects</h2>
+            <p class="intro">A few examples of integration work, written as samples for you to replace.</p>
+            <!-- Sample text: replace with your real projects -->
+            <ul class="projects">
+                <li>
+                    <h3>Order-to-billing integration</h3>
+                    <p>Connected the order system to billing so invoices are created automatically, cutting manual re-entry and the errors that came with it.</p>
+                    <p class="stack">REST APIs, SQL, scheduled jobs</p>
+                </li>
+                <li>
+                    <h3>Service level dashboard</h3>
+                    <p>Built a weekly report that shows response and resolution times against targets, so teams can see where service is slipping.</p>
+                    <p class="stack">Data analysis, reporting, SLA tracking</p>
+                </li>
+                <li>
+                    <h3>Customer onboarding rollout</h3>
+                    <p>Configured new software for client teams, wrote the user guides and ran training sessions through the first month of use.</p>
+                    <p class="stack">Configuration, documentation, training</p>
+                </li>
+            </ul>
+        </section>
 
+        <section id="contact" class="contact">
+            <div class="wrap contact-grid">
+                <div>
+                    <h2 class="title">Get in touch</h2>
+                    <p>Have a role, a project, or a question about integrations? Send me a message.</p>
+                    <ul class="links">
+                        <li><a href="https://github.com/" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <form id="contact-form">
+                    <label>Name
+                        <input type="text" name="name" autocomplete="name" required>
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                    </label>
+                    <label>Message
+                        <textarea name="message" required></textarea>
+                    </label>
+                    <button class="btn btn-send" type="submit">Send message</button>
+                    <p class="status" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrap footer">
+        <p>&copy; <span id="year">2026</span> John Romnick</p>
         <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#exprience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
-        <p class="copyright">© All Rights Reserved | John Romnick</p>
     </footer>
 
     <script src="script.js"></script>
-    
 </body>
 </html>
